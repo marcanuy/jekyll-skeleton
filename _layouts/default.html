@@ -1,9 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="/assets/main.css">
+	
+	{%comment%} jekyll-seo-tag plugin {%endcomment%}
+	{% seo %}
     </head>
     <body>
-	{{content}}
+
+	<div class="container">
+
+	    <div class="starter-template">
+		<h1>{{page.title}}</h1>
+		<p class="lead">{{page.excerpt}}</p>
+	    </div>
+
+	    {{content}}
+
+	</div><!-- /.container -->
+
+
+
 	<script src="{{'/bower_components/jquery/dist/jquery.min.js' | prepend: site.baseurl}}"></script>
 	<script src="{{'/bower_components/tether/dist/js/tether.min.js' | prepend: site.baseurl}}"></script>
 	<script src="{{'/bower_components/bootstrap/dist/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>

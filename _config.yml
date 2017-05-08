@@ -1,5 +1,43 @@
+title: "Jekyll Skeleton"
+description:           # - A short description (e.g., A blog dedicated to reviewing cat gifs)
+url: www.example.com   # - The full URL to your site. Note: site.github.url will be used by default.
+author:                # global author information (see below)
+
+twitter:
+  username: marcanuy
+
+facebook:
+  app_id: 1234 # a Facebook app ID for Facebook insights
+  publisher: 1234      # a Facebook page URL or ID of the publishing entity
+  admins: 1234         # facebook:admins - a Facebook user ID for domain
+                       #   insights linked to a personal account
+logo: # /assets/your-company-logo.png - URL to a site-wide logo (e.g., /)
+
+social:
+  name: Marcelo Canina
+  links:
+    - https://twitter.com/marcanuy
+    - https://www.linkedin.com/in/marcelocanina
+    - https://plus.google.com/118415138433063920612
+    - https://github.com/marcanuy
+    - https://keybase.io/marcanuy
+    #- https://www.facebook.com/marcanuy
+
+webmaster_verifications:
+  google: #1234 
+  bing: #1234
+  alexa: #1234
+  yandex: #1234
+
+lang: en_US
+
 sass:
     load_paths:
         - _sass
         - bower_components
 
+gems:
+  - jekyll-toc
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
