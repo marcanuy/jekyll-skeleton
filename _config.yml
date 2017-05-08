@@ -1,17 +1,23 @@
-title: "Jekyll Skeleton"
-description:           # - A short description (e.g., A blog dedicated to reviewing cat gifs)
-url: www.example.com   # - The full URL to your site. Note: site.github.url will be used by default.
-author:                # global author information (see below)
+title: ""              # Site title
+
+description: ""        # A short description (e.g., "A website dedicated to happyjekylling")
+
+url: ""                # The full URL to your site. 
+                       # Note: site.github.url will be used by default.
+  
+author: marcanuy       # Global author information, should be the
+                       # key of file: _data/authors.yml to be used in
+                       # site.data.authors[author]
 
 twitter:
-  username: marcanuy
+  username: marcanuy   # site-wide Twitter handle
 
 facebook:
-  app_id: 1234 # a Facebook app ID for Facebook insights
+  app_id: 1234         # a Facebook app ID for Facebook insights
   publisher: 1234      # a Facebook page URL or ID of the publishing entity
   admins: 1234         # facebook:admins - a Facebook user ID for domain
                        #   insights linked to a personal account
-logo: # /assets/your-company-logo.png - URL to a site-wide logo (e.g., /)
+logo:                  # /assets/img/your-company-logo.png - URL to a site-wide logo (e.g., /)
 
 social:
   name: Marcelo Canina
@@ -30,6 +36,8 @@ webmaster_verifications:
   yandex: #1234
 
 lang: en_US
+
+##########################################################################
 
 sass:
     load_paths:
