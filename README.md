@@ -7,12 +7,14 @@ Jekyll scaffolding to start new websites.
 **Table of Contents**
 
 - [jekyll-skeleton](#jekyll-skeleton)
+- [Features](#features)
 - [Design Philosophy](#design-philosophy)
 - [Commands](#commands)
     - [Install](#install)
     - [Serve](#serve)
 - [Adding posts](#adding-posts)
 - [Plugins](#plugins)
+- [Final structure](#final-structure)
 
 <!-- markdown-toc end -->
 
