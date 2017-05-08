@@ -25,8 +25,14 @@ This is a basic Jekyll site created with `jekyll new --blank` (without
 themes, or example posts) to serve as a starting point for any
 website.
 
-It contains the plugins I was constantly installing and configuring in
-any other jekyll website I created.
+It is based in part on
+the
+[How To Add Bootstrap 4 To Jekyll The Right Way](https://simpleit.rocks/how-to-add-bootstrap-4-to-jekyll-the-right-way/) article,
+applied on a blank Jekyll instance.
+
+It also contains the plugins I was constantly installing and
+configuring, a basic multilanguage structure I believe most
+multilingual sites should contain.
 
 # Features
 
@@ -129,5 +135,6 @@ _site/
 └── sitemap.xml
 
 5 directories, 10 files
+
 </samp>
 </pre>
