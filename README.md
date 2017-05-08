@@ -7,6 +7,7 @@ Jekyll scaffolding to start new websites.
 **Table of Contents**
 
 - [jekyll-skeleton](#jekyll-skeleton)
+- [Overview](#overview)
 - [Features](#features)
 - [Design Philosophy](#design-philosophy)
 - [Commands](#commands)
@@ -17,6 +18,15 @@ Jekyll scaffolding to start new websites.
 - [Final structure](#final-structure)
 
 <!-- markdown-toc end -->
+
+# Overview
+
+This is a basic Jekyll site created with `jekyll new --blank` (without
+themes, or example posts) to serve as a starting point for any
+website.
+
+It contains the plugins I was constantly installing and configuring in
+any other jekyll website I created.
 
 # Features
 
