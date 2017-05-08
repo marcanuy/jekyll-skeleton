@@ -1,4 +1,5 @@
-# jekyll-skeleton
+jekyll-skeleton
+===============
 
 Jekyll scaffolding to start new websites.
 
@@ -6,16 +7,16 @@ Jekyll scaffolding to start new websites.
 **Table of Contents**
 
 - [jekyll-skeleton](#jekyll-skeleton)
-    - [Design Philosophy](#design-philosophy)
-    - [Commands](#commands)
-        - [Install](#install)
-        - [Serve](#serve)
-    - [Adding posts](#adding-posts)
-    - [Plugins](#plugins)
+- [Design Philosophy](#design-philosophy)
+- [Commands](#commands)
+    - [Install](#install)
+    - [Serve](#serve)
+- [Adding posts](#adding-posts)
+- [Plugins](#plugins)
 
 <!-- markdown-toc end -->
 
-## Design Philosophy
+# Design Philosophy
 
 **jekyll-skeleton** has been built with the following principles in
 mind:
@@ -27,9 +28,9 @@ mind:
 - Follows `jekyll-seo-tag` usage suggestions to integrate author
   information.
 
-## Commands
+# Commands
 
-### Install
+## Install
 
 ~~~ bash
 git clone https://github.com/marcanuy/jekyll-skeleton
@@ -38,15 +39,15 @@ bower install
 bundle install --path=vendor/bundle
 ~~~
 
-### Serve
+## Serve
 
 ~~~ bash
 bundle exec jekyll serve
 ~~~
 
-## Adding posts
+# Adding posts
 
-## Plugins
+# Plugins
 
 Included plugins:
 
