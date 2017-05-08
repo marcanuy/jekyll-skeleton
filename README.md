@@ -90,13 +90,6 @@ Included plugins:
 
 # Final structure
 
-
-<kbd></kbd>
-
-~~~
-
-~~~
-
 <pre>
 <samp>
 <span >$</span> <kbd>bundle exec jekyll build</kbd>
