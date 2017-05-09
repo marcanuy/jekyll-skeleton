@@ -208,6 +208,11 @@ _site/
 │   ├── jquery
 │   └── tether
 ├── bower.json
+├── en
+│   └── example-post.html
+├── es
+│   ├── index.html
+│   └── post-ejemplo.html
 ├── feed.xml
 ├── Gemfile
 ├── Gemfile.lock
@@ -217,8 +222,7 @@ _site/
 ├── robots.txt
 └── sitemap.xml
 
-5 directories, 10 files
-
+7 directories, 13 files
 </samp>
 </pre>
 
