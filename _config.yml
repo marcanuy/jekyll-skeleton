@@ -49,3 +49,19 @@ gems:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
+
+defaults:
+  #languages
+  -
+    scope:
+      path: ""
+    values:
+      lang: "en"
+      layout: default
+  -
+    scope:
+      path: "es"
+    values:
+      lang: "es"
+
+permalink: /:categories/:title

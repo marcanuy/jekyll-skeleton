@@ -25,33 +25,82 @@ This is a basic Jekyll site created with `jekyll new --blank` (without
 themes, or example posts) to serve as a starting point for any
 website.
 
-It is based in part on
-the
-[How To Add Bootstrap 4 To Jekyll The Right Way](https://simpleit.rocks/how-to-add-bootstrap-4-to-jekyll-the-right-way/) article,
-applied on a blank Jekyll instance.
-
-It also contains the plugins I was constantly installing and
-configuring, a basic multilanguage structure I believe most
-multilingual sites should contain.
+Its structure is influenced
+by
+[How To Add Bootstrap 4 To Jekyll The Right Way](https://simpleit.rocks/how-to-add-bootstrap-4-to-jekyll-the-right-way/) and
+[Multilingual Jekyll Without Plugins](https://simpleit.rocks/multilingual-jekyll-without-plugins/) articles
+applied
+on a blank Jekyll instance with the suggestions provided by the plugins below.
 
 # Features
 
-- Automatically generates at each `build`:
-  - <http://sitemaps.org> compliant sitemap 
+- Automatically generates at each <kbd>jekyll build</kbd>:
+  - <http://sitemaps.org> compliant sitemap at `/sitemap.xml`
   - [Atom](https://tools.ietf.org/html/rfc4287) feed at
     `/feed.xml`.
 - [SASS](http://sass-lang.com/) and easy customization of Bootstrap 4
-  variables.
+  variables in `/assets/main.scss` and `/_sass/_variables.scss`.
 - Automatically adds metadata tags for Search Engines and Social
   Networks
   - Page title, with site title or description appended
+	
+		<head>
+		   <title>...</title>
+		</head>
+	
   - Page description
+	  
+		<head>
+			<meta name="description" content="..."/>
+		</head>
+		
   - Canonical URL
+  
+		<link rel="canonical" href="..."/>
+  
   - Next and previous URLs on paginated pages
   - JSON-LD Site and post metadata for richer indexing
-  - Open Graph title, description, site title, and URL (for Facebook, LinkedIn, etc.)
-  - Twitter Summary Card metadata
+  
+		<meta property="fb:app_id" content="1822851531277021"/>
+		<script type="application/ld+json">
+		{"@context": "http://schema.org",
+		"@type": "WebPage",
+		"headline": "...",
+		"description": "...",
+		"url": "..."}</script>
+		
+  - Open Graph title, description, site title, and URL (for Facebook,
+    LinkedIn, etc.)
 	
+		<meta property="og:title" content="..."/>
+		<meta name="description" content="..."/>
+		<meta property="og:description" content="..."/>
+		<meta property="og:url" content="..."/>
+		<meta property="og:site_name" content="..."/>
+		<meta property="og:type" content="..."/>
+		<meta property="article:published_time" content="..."/>
+		<meta property="fb:app_id" content="..."/>
+	
+  - Twitter Summary Card metadata
+
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:site" content="..."/>
+		<meta name="twitter:creator" content="..."/>
+		
+  - Multilanguage
+	- Language navigation menu for each page to all the other
+      translation versions
+		
+	    	<a hreflang="es" href="http://example.com/es/foobar" />
+		    <a hreflang="de" href="http://example.com/de/foobar" />
+			<a hreflang="en" href="http://example.com/en/foobar" />
+			
+	- Alternate link elements in the `head` section of HTML
+	
+			<link rel="alternate" hreflang="es" href="http://example.com/es" />
+			<link rel="alternate" hreflang="de" href="http://example.com/de" />
+			<link rel="alternate" hreflang="en" href="http://example.com/en" />
+
 # Design Philosophy
 
 **jekyll-skeleton** has been built with the following principles in
@@ -61,8 +110,7 @@ mind:
 - Bootstrap 4 integrated.
 - Gem theme independent.
 - Optimized for multilanguage.
-- Follows `jekyll-seo-tag` usage suggestions to integrate author
-  information.
+- Follows `jekyll-seo-tag` usage suggestions.
 
 # Commands
 
@@ -81,7 +129,42 @@ bundle install --path=vendor/bundle
 bundle exec jekyll serve
 ~~~
 
-# Adding posts
+# Usage
+
+## Adding a new language
+
+Add the language to `_config.yml`:
+
+	defaults:
+	  #languages
+	  -
+		scope:
+		  path: ""
+		values:
+		  lang: "en"
+		  layout: default
+	  -
+		scope:
+		  path: "es"
+		values:
+		  lang: "es"
+
+Its name to `_data/locales.yml` and an equivalent to each page in the
+language in `/_data/map.yml`:
+
+	-
+	  en: index.html
+	  es: es/index.html
+	-
+	  en: about.html
+	  es: es/acerca.html
+
+## Adding posts
+
+Add a post in each language located in the language subdirectory:
+`/en`, `es`, etc.
+
+The following properties in posts front-matter are used:
 
     ---
     title:       # jekyll-seo-tag - The title of the post, page, or document
@@ -138,3 +221,7 @@ _site/
 
 </samp>
 </pre>
+
+# Questions
+
+Feel free to open issues and/or contributing!

@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="/assets/main.css">
-	
+	{% include alternate.html %}	
 	{%comment%} jekyll-seo-tag plugin {%endcomment%}
 	{% seo %}
     </head>
@@ -12,12 +12,41 @@
 
 	<div class="container">
 
-	    <div class="starter-template">
-		<h1>{{page.title}}</h1>
-		<p class="lead">{{page.excerpt}}</p>
+	    <h1>{{page.title}}</h1>
+
+	    <div>
+		<h2>Language nav menu:</h2>
+		{% include lang_nav.html %}
 	    </div>
 
+	    <hr>
+
 	    {{content}}
+	    
+	    <hr>
+	    
+	    <div>
+		<h2>All Posts</h2>
+		<ul>
+		    {% for item in site.posts %}
+		    <li>
+			<a href="{{item.url}}" hreflang="{{item.lang}}">{{ item.title }} <strong>[{{item.lang}}]</strong></a>
+		    </li>
+		    {% endfor %}
+		</ul>
+	    </div>
+
+	    <div>
+		<h2>All Pages</h2>
+		<ul>
+		    {% assign pages = site.pages | where_exp:"item", "item.name contains '.htm'" %}
+		    {% for item in pages %}
+		    <li>
+			<a href="{{item.url}}" hreflang="{{item.lang}}">{{ item.title }} <strong>[{{item.lang}}]</strong></a>
+		    </li>
+		    {% endfor %}
+		</ul>
+	    </div>
 
 	</div><!-- /.container -->
 
