@@ -244,12 +244,12 @@ Feel free to open issues and/or contributing!
 
 ## English homepage
 
-![English](http://imgur.com/xDDuQJ3l.png ) 
+![English](http://imgur.com/fIi9WUcl.png) 
 
 ## Spanish homepage
 
-![Spanish](http://imgur.com/YQSVnCql.png ) 
+![Spanish](http://imgur.com/d670IESl.png ) 
 
 ## German post
 
-![Deutsch](http://imgur.com/5rcTeLLl.png ) 
+![Deutsch](http://imgur.com/kPQPuuhl.png ) 
