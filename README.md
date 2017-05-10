@@ -229,3 +229,9 @@ _site/
 # Questions
 
 Feel free to open issues and/or contributing!
+
+# Screenshots
+
+![English](http://imgur.com/xDDuQJ3l.png ) 
+![Spanish](http://imgur.com/YQSVnCql.png ) 
+![Deutsch](http://imgur.com/5rcTeLLl.png ) 

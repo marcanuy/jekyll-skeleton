@@ -14,6 +14,7 @@ en:
       It uses utility classes for typography and spacing to space
       content out within the larger container.
     jumbotron_button: Learn more
+    jumbotron_url: "/en/example-post"
 es:
   lang:
     title: Español
@@ -31,6 +32,7 @@ es:
       Utiliza clases de utilidad para la tipografía y espaciamiento al
       espacio contenido en el contenedor más grande.
     jumbotron_button: Más información
+    jumbotron_url: "/es/post-ejemplo"
 de:
   lang:
     title: Deutsche
