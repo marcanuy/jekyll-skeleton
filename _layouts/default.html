@@ -26,7 +26,7 @@
 	    <hr>
 	    
 	    <div>
-		<h2>All Posts</h2>
+		<h2>{{site.data.locales[page.lang].site.all_posts}}</h2>
 		<ul>
 		    {% for item in site.posts %}
 		    <li>
@@ -37,7 +37,7 @@
 	    </div>
 
 	    <div>
-		<h2>All Pages</h2>
+		<h2>{{site.data.locales[page.lang].site.all_pages}}</h2>
 		<ul>
 		    {% assign pages = site.pages | where_exp:"item", "item.name contains '.htm'" %}
 		    {% for item in pages %}
