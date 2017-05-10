@@ -1,6 +1,6 @@
-title: ""              # Site title
+title: ""              # Site title in default language
 
-description: ""        # A short description (e.g., "A website dedicated to happyjekylling")
+description: ""        # A short description in default language
 
 url: ""                # The full URL to your site. 
                        # Note: site.github.url will be used by default.

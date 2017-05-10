@@ -3,6 +3,8 @@ en:
     title: English
   site:
     title: Jekyll Skeleton
+    description: >-
+      The meta description of the website.
     nav_menu: Language navigation menu
     all_posts: All Posts
     all_pages: All Pages
@@ -22,6 +24,8 @@ es:
     title: Español
   site:
     title: Jekyll Esqueleto
+    description: >- #also add it to /es/index.html
+      La meta descripción del sitio web.
     nav_menu: Menú de navegación de idioma
     all_posts: Todos los mensajes
     all_pages: Todas las páginas
@@ -42,6 +46,8 @@ de:
     title: Deutsche
   site:
     title: Jekyll Skelett
+    description: >- #also add it to /de/index.html
+      Die Meta-Beschreibung der Website.
     nav_menu: Sprachmenü
     all_posts: Alle Beiträge
     all_pages: Alle Seiten

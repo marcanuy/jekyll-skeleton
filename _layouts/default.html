@@ -5,8 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="/assets/main.css">
 	{% include alternate.html %}	
-	{%comment%} jekyll-seo-tag plugin {%endcomment%}
-	{% seo %}
+	{%comment%} jekyll-seo-tag plugin with disabled title to make them localized {%endcomment%}
+	{% seo title=false %}
+	{% assign site_title = site.data.locales[page.lang].site.title%}
+	<title>{{page.title}}{% unless page.title contains site_title%} | {{site_title}}{% endunless %}</title>
     </head>
     <body>
 
