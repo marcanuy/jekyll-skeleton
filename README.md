@@ -13,9 +13,16 @@ Jekyll scaffolding to start new websites.
 - [Commands](#commands)
     - [Install](#install)
     - [Serve](#serve)
-- [Adding posts](#adding-posts)
+- [Usage](#usage)
+    - [Adding a new language](#adding-a-new-language)
+    - [Adding posts](#adding-posts)
 - [Plugins](#plugins)
 - [Final structure](#final-structure)
+- [Questions](#questions)
+- [Screenshots](#screenshots)
+    - [English homepage](#english-homepage)
+    - [Spanish homepage](#spanish-homepage)
+    - [German post](#german-post)
 
 <!-- markdown-toc end -->
 
@@ -232,6 +239,14 @@ Feel free to open issues and/or contributing!
 
 # Screenshots
 
+## English homepage
+
 ![English](http://imgur.com/xDDuQJ3l.png ) 
+
+## Spanish homepage
+
 ![Spanish](http://imgur.com/YQSVnCql.png ) 
+
+## German post
+
 ![Deutsch](http://imgur.com/5rcTeLLl.png ) 
