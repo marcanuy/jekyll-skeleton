@@ -1,6 +1,51 @@
 en:
-  title: English
+  lang:
+    title: English
+  site:
+    title: Jekyll Skeleton
+    nav_menu: Language navigation menu
+    footer_line: This is the content that will appear in the footer
+  home:
+    jumbotron_heading: Hello, world!
+    jumbotron_lead: >-
+      This is a simple hero unit, a simple jumbotron-style component
+      for calling extra attention to featured content or information.
+    jumbotron_paragraph: >-
+      It uses utility classes for typography and spacing to space
+      content out within the larger container.
+    jumbotron_button: Learn more
 es:
-  title: Spanish
+  lang:
+    title: Español
+  site:
+    title: Jekyll Esqueleto
+    nav_menu: Menú de navegación de idioma
+    footer_line: Este es el contenido que aparecerá en el pie de página
+  home:
+    jumbotron_heading: Hola, mundo!
+    jumbotron_lead: >-
+       Se trata de una unidad de héroe simple, un componente simple
+       jumbotron-estilo para llamar la atención adicional al contenido
+       ofrecido o a la información.
+    jumbotron_paragraph: >-
+      Utiliza clases de utilidad para la tipografía y espaciamiento al
+      espacio contenido en el contenedor más grande.
+    jumbotron_button: Más información
 de:
-  title: German
+  lang:
+    title: Deutsche
+  site:
+    title: Jekyll Skelett
+    nav_menu: Sprachmenü
+    footer_line: Dies ist der Inhalt, der in der Fußzeile erscheinen wird
+  home:
+    jumbotron_heading: Hallo Welt!
+    jumbotron_lead: >-
+      Dies ist eine einfache Heldeneinheit, eine einfache
+      Jumbotron-Komponente Um zusätzliche Aufmerksamkeit auf
+      vorgestellten Inhalt oder Informationen zu rufen.
+    jumbotron_paragraph: >-
+      Es nutzt Gebrauchsklassen für Typografie und Abstand zum Raum
+      Inhalt innerhalb des größeren Containers.
+    jumbotron_button: Erfahren Sie mehr
+    jumbotron_url: "/de/beispiel-post"

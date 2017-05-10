@@ -1,6 +1,8 @@
 -
   en: index.html
   es: es/index.html
+  de: de/index.html
 -
   en: en/_posts/2017-05-09-example-post.md
   es: es/_posts/2017-05-09-post-ejemplo.md
+  de: de/_posts/2017-05-09-beispiel-post.md

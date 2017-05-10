@@ -63,5 +63,10 @@ defaults:
       path: "es"
     values:
       lang: "es"
+  -
+    scope:
+      path: "de"
+    values:
+      lang: "de"
 
 permalink: /:categories/:title

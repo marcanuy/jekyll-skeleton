@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
     <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,12 +11,12 @@
     <body>
 
 	<div class="container">
-
+	    <small>Site name: {{site.data.locales[page.lang].site.title}}</small>
 	    <h1>{{page.title}}</h1>
 
 	    <div>
-		<h2>Language nav menu:</h2>
-		{% include lang_nav.html %}
+		<h3>{{site.data.locales[page.lang].site.nav_menu}}</h3>
+		<div>{% include lang_nav.html %}</div>
 	    </div>
 
 	    <hr>
@@ -50,6 +50,9 @@
 
 	</div><!-- /.container -->
 
+	<footer class="text-center">
+	    <p>{{site.data.locales[page.lang].site.footer_line}}</p>
+	</footer>
 
 
 	<script src="{{'/bower_components/jquery/dist/jquery.min.js' | prepend: site.baseurl}}"></script>
