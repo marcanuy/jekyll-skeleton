@@ -41,7 +41,7 @@
 	    <div>
 		<h2>{{site.data.locales[page.lang].site.all_pages}}</h2>
 		<ul>
-		    {% assign pages = site.pages | where_exp:"item", "item.name contains '.htm'" %}
+		    {% assign pages = site.pages | where_exp: "item", "item.title != nil" %}
 		    {% for item in pages %}
 		    <li>
 			<a href="{{item.url}}" hreflang="{{item.lang}}">{{ item.title }} <strong>[{{item.lang}}]</strong></a>

@@ -6,3 +6,12 @@
   en: en/_posts/2017-05-09-example-post.md
   es: es/_posts/2017-05-09-post-ejemplo.md
   de: de/_posts/2017-05-09-beispiel-post.md
+-
+  en: en/subcategory1/index.md
+  es: es/subcategoria1/index.md
+  de: de/unterkategorie1/index.md
+-
+  en: en/subcategory1/_posts/
+  es: es/subcategoria1/_posts/
+  de: de/unterkategorie1/_posts/
+  

@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+{% assign current_cat = page.dir | split: "/" | last%}
+{% assign posts = site.categories[current_cat] | where: 'lang',page.lang %}
+{% for item in posts %}
+{{item.title}}
+{% endfor %}
