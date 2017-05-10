@@ -215,6 +215,9 @@ _site/
 │   ├── jquery
 │   └── tether
 ├── bower.json
+├── de
+│   ├── beispiel-post.html
+│   └── index.html
 ├── en
 │   └── example-post.html
 ├── es
@@ -229,7 +232,7 @@ _site/
 ├── robots.txt
 └── sitemap.xml
 
-7 directories, 13 files
+8 directories, 15 files
 </samp>
 </pre>
 
