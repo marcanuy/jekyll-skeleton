@@ -51,7 +51,7 @@
 	    </div>
 
 	    <div>
-		<h2>Pages without title</h2>
+		<h2>{{site.data.locales[page.lang].site.no_title_pages}}</h2>
 		<ul>
 		    {% assign pages = site.pages | where_exp:"item", "item.title == nil" %}
 		    {% for item in pages %}

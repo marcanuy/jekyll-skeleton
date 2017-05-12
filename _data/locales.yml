@@ -8,6 +8,7 @@ en:
     nav_menu: Language navigation menu
     all_posts: All Posts
     all_pages: All Pages
+    no_title_pages: Pages without title
     footer_line: This is the content that will appear in the footer
   home:
     jumbotron_heading: Hello, world!
@@ -29,6 +30,7 @@ es:
     nav_menu: Menú de navegación de idioma
     all_posts: Todos los mensajes
     all_pages: Todas las páginas
+    no_title_pages: Páginas sin titulo
     footer_line: Este es el contenido que aparecerá en el pie de página
   home:
     jumbotron_heading: Hola, mundo!
@@ -51,6 +53,7 @@ de:
     nav_menu: Sprachmenü
     all_posts: Alle Beiträge
     all_pages: Alle Seiten
+    no_title_pages: Seiten ohne Titel.
     footer_line: Dies ist der Inhalt, der in der Fußzeile erscheinen wird
   home:
     jumbotron_heading: Hallo Welt!
