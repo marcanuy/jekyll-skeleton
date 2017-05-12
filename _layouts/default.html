@@ -50,6 +50,18 @@
 		</ul>
 	    </div>
 
+	    <div>
+		<h2>Pages without title</h2>
+		<ul>
+		    {% assign pages = site.pages | where_exp:"item", "item.title == nil" %}
+		    {% for item in pages %}
+		    <li>
+			<a href="{{item.url}}" hreflang="{{item.lang}}">{{ item.path }} <strong>[{{item.lang}}]</strong></a>
+		    </li>
+		    {% endfor %}
+		</ul>
+	    </div>
+
 	</div><!-- /.container -->
 
 	<footer class="text-center">
