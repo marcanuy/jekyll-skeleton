@@ -206,7 +206,7 @@ Configuration file: /tmp/jekyll-skeleton/_config.yml
       Generating... 
                     done in 3.897 seconds.
  Auto-regeneration: disabled. Use --watch to enable.
-<span >$</span> <kbd>tree -L 2 _site/</kbd>
+<span >$</span> <kbd>tree -L 3 _site/</kbd>*
 _site/
 ├── assets
 │   └── main.css
@@ -217,12 +217,21 @@ _site/
 ├── bower.json
 ├── de
 │   ├── beispiel-post.html
-│   └── index.html
+│   ├── index.html
+│   └── unterkategorie1
+│       ├── index.html
+│       └── post-in-unterkategorie.html
 ├── en
-│   └── example-post.html
+│   ├── example-post.html
+│   └── subcategory1
+│       ├── index.html
+│       └── post-in-subdirectory.html
 ├── es
 │   ├── index.html
-│   └── post-ejemplo.html
+│   ├── post-ejemplo.html
+│   └── subcategoria1
+│       ├── index.html
+│       └── post-en-subdirectorio.html
 ├── feed.xml
 ├── Gemfile
 ├── Gemfile.lock
@@ -232,7 +241,6 @@ _site/
 ├── robots.txt
 └── sitemap.xml
 
-8 directories, 15 files
 </samp>
 </pre>
 
