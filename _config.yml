@@ -39,10 +39,12 @@ lang: en_US
 
 ##########################################################################
 
+# sass style can be nested (default), compact, compressed, or expanded.
 sass:
     load_paths:
         - _sass
         - bower_components
+    style: compressed
 
 gems:
   - jekyll-toc
