@@ -3,7 +3,7 @@
     <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="/assets/main.css">
+	<link rel="stylesheet" href="{{'/assets/main.css' | absolute_url}}">
 	{% include alternate.html %}	
 	{%comment%} jekyll-seo-tag plugin with disabled title to make them localized {%endcomment%}
 	{% seo title=false %}
@@ -32,7 +32,8 @@
 		<ul>
 		    {% for item in site.posts %}
 		    <li>
-			<a href="{{item.url}}" hreflang="{{item.lang}}">{{ item.title }} <strong>[{{item.lang}}]</strong></a>
+{{item.url}}
+			<a href="{{item.url | absolute_url}}" hreflang="{{item.lang}}">{{ item.title }} <strong>[{{item.lang}}]</strong></a>
 		    </li>
 		    {% endfor %}
 		</ul>
@@ -44,7 +45,7 @@
 		    {% assign pages = site.pages | where_exp: "item", "item.title != nil" %}
 		    {% for item in pages %}
 		    <li>
-			<a href="{{item.url}}" hreflang="{{item.lang}}">{{ item.title }} <strong>[{{item.lang}}]</strong></a>
+			<a href="{{item.url | absolute_url}}" hreflang="{{item.lang}}">{{ item.title }} <strong>[{{item.lang}}]</strong></a>
 		    </li>
 		    {% endfor %}
 		</ul>
@@ -56,7 +57,7 @@
 		    {% assign pages = site.pages | where_exp:"item", "item.title == nil" %}
 		    {% for item in pages %}
 		    <li>
-			<a href="{{item.url}}" hreflang="{{item.lang}}">{{ item.path }} <strong>[{{item.lang}}]</strong></a>
+			<a href="{{item.url | absolute_url}}" hreflang="{{item.lang}}">{{ item.path }} <strong>[{{item.lang}}]</strong></a>
 		    </li>
 		    {% endfor %}
 		</ul>
@@ -69,8 +70,8 @@
 	</footer>
 
 
-	<script src="{{'/bower_components/jquery/dist/jquery.min.js' | prepend: site.baseurl}}"></script>
-	<script src="{{'/bower_components/tether/dist/js/tether.min.js' | prepend: site.baseurl}}"></script>
-	<script src="{{'/bower_components/bootstrap/dist/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+	<script src="{{'/bower_components/jquery/dist/jquery.min.js' | absolute_url}}"></script>
+	<script src="{{'/bower_components/tether/dist/js/tether.min.js' | absolute_url}}"></script>
+	<script src="{{'/bower_components/bootstrap/dist/js/bootstrap.min.js' | absolute_url}}"></script>
     </body>
 </html>
