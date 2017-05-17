@@ -1,7 +1,7 @@
 jekyll-skeleton
 ===============
 
-Jekyll scaffolding to start new websites.
+Jekyll scaffolding to start new websites. <https://marcanuy.github.io/jekyll-skeleton/>
 
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
 **Table of Contents**
