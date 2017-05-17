@@ -1,0 +1,17 @@
+{% assign menuitems = site.data.nav.main_nav[page.lang] %}
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="{{'/'| append: page.lang | absolute_url}}">{{site.data.locales[page.lang].site.title}}</a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	<ul class="navbar-nav mr-auto">
+	    {% for item in menuitems %}
+	    <li class="nav-item {% if page.url==item.url %}active{% endif%}">
+		<a class="nav-link" href="{{item.url}}">{{item.title}} {% if page.url==item.url %}<span class="sr-only">(current)</span>{% endif%}</a>
+	    </li>
+	    {% endfor %}
+    </div>
+</nav>

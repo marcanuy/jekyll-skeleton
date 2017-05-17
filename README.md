@@ -185,7 +185,7 @@ The following properties in posts front-matter are used:
 
 # Plugins
 
-Included plugins:
+*Jekyll-skeleton* uses the following plugins:
 
 - <https://github.com/toshimaru/jekyll-toc>  A liquid filter plugin
   for Jekyll which generates a table of contents.
@@ -195,6 +195,9 @@ Included plugins:
   files to make sure they're accurate.
 - <https://github.com/jekyll/jekyll-feed> A Jekyll plugin to generate
   an Atom (RSS-like) feed of your Jekyll posts
+
+If you want to host a site derived from this repo in Github, you can
+follow this guide: [Automated Deployment Of Jekyll Websites To Github Pages With A Git Push To Github ](https://simpleit.rocks/automated-deployment-of-jekyll-websites-to-github-pages-with-a-git-push-to-github/).
 
 # Final structure
 
@@ -223,6 +226,7 @@ _site/
 │   └── unterkategorie1
 │       ├── index.html
 │       └── post-in-unterkategorie.html
+├── deploy_key.enc
 ├── en
 │   ├── example-post.html
 │   └── subcategory1

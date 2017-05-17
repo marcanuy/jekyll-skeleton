@@ -1,0 +1,22 @@
+main_nav:
+  en:
+    - url: "/"
+      title: "Home"
+      home: true
+    - url: "/en/subcategory1/"
+      title: "Subcategory"
+  es:
+    - url: "/es/"
+      title: "Inicio"
+      home: true
+    - url: "/es/subcategoria1/"
+      title: "Subcategoria"
+  de:
+    - url: "/de/"
+      title: "Zuhause"
+      home: true
+    - url: "/de/unterkategorie1/"
+      title: "Unterkategorie"
+# secondary_nav:
+#   en:
+#   es:

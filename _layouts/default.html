@@ -14,12 +14,10 @@
 
 	<div class="container">
 	    <small>Site name: {{site.data.locales[page.lang].site.title}}</small>
-	    <h1>{{page.title}}</h1>
 
-	    <div>
-		<h3>{{site.data.locales[page.lang].site.nav_menu}}</h3>
-		<div>{% include lang_nav.html %}</div>
-	    </div>
+	    {% include mainnav.html %}
+
+	    <h1>{{page.title}}</h1>
 
 	    <hr>
 
@@ -32,7 +30,7 @@
 		<ul>
 		    {% for item in site.posts %}
 		    <li>
-{{item.url}}
+			{{item.url}}
 			<a href="{{item.url | absolute_url}}" hreflang="{{item.lang}}">{{ item.title }} <strong>[{{item.lang}}]</strong></a>
 		    </li>
 		    {% endfor %}
@@ -66,6 +64,11 @@
 	</div><!-- /.container -->
 
 	<footer class="text-center">
+	    <div>
+		<h3>{{site.data.locales[page.lang].site.nav_menu}}</h3>
+		<div>{% include lang_nav.html %}</div>
+	    </div>
+
 	    <p>{{site.data.locales[page.lang].site.footer_line}}</p>
 	</footer>
 
