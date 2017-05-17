@@ -1,0 +1,17 @@
+language: ruby
+rvm:
+- 2.3.1
+before_script:
+- npm install -g bower
+- bower install
+- chmod +x ./deploy.sh
+script: bash ./deploy.sh
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - COMMIT_AUTHOR_EMAIL: mcanina@gmail.com
+  - ENCRYPTION_LABEL: 3b1e7d965353
+sudo: false
+before_install:
+- openssl aes-256-cbc -K $encrypted_3b1e7d965353_key -iv $encrypted_3b1e7d965353_iv
+  -in deploy_key.enc -out deploy_key -d
