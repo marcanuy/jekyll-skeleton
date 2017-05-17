@@ -8,6 +8,6 @@ layout: default
     <hr class="my-4">
     <p>{{site.data.locales[page.lang].home.jumbotron_paragraph}}</p>
     <p class="lead">
-	<a class="btn btn-primary btn-lg" href="{{site.data.locales[page.lang].home.jumbotron_url}}" role="button">{{site.data.locales[page.lang].home.jumbotron_button}}</a>
+	<a class="btn btn-primary btn-lg" href="{{site.data.locales[page.lang].home.jumbotron_url | absolute_url}}" role="button">{{site.data.locales[page.lang].home.jumbotron_button}}</a>
     </p>
 </div>
