@@ -72,3 +72,5 @@ defaults:
       lang: "de"
 
 permalink: /:categories/:title
+
+exclude: [deploy.sh]
