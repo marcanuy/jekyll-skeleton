@@ -30,7 +30,9 @@ social:
     #- https://www.facebook.com/marcanuy
 
 webmaster_verifications:
-  google: #1234 
+  # Google verification method: HTML tag 
+  # the value of the *content* attribute: <meta name="google-site-verification" content="jXQVtt7ISFtvOvNUYoAQ0NiOaaQMWzSwoV2_FIqr2W4" />
+  google: "jXQVtt7ISFtvOvNUYoAQ0NiOaaQMWzSwoV2_FIqr2W4"
   bing: #1234
   alexa: #1234
   yandex: #1234
