@@ -14,4 +14,7 @@
   en: en/subcategory1/_posts/
   es: es/subcategoria1/_posts/
   de: de/unterkategorie1/_posts/
-  
+-
+  en: en/subcategory1/_posts/2017-05-10-post-in-subdirectory.md
+  es: es/subcategoria1/_posts/2017-05-10-post-en-subdirectorio.md
+  de: de/unterkategorie1/_posts/2017-05-10-post-in-unterkategorie.md
