@@ -4,10 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="{{'/assets/main.css' | absolute_url}}">
+	<link rel="stylesheet" href="{{'/bower_components/font-awesome/css/font-awesome.min.css' | absolute_url}}">
 	{% include alternate.html %}	
 	{%comment%} jekyll-seo-tag plugin with disabled title to make them localized {%endcomment%}
 	{% seo title=false %}
-	{% assign site_title = site.data.locales[page.lang].site.title%}
+	{% assign site_title = site.data.locales[page.lang].site.title %}
 	<title>{{page.title}}{% unless page.title contains site_title%} | {{site_title}}{% endunless %}</title>
     </head>
     <body>
@@ -68,8 +69,13 @@
 		<h3>{{site.data.locales[page.lang].site.nav_menu}}</h3>
 		<div>{% include lang_nav.html %}</div>
 	    </div>
-
 	    <p>{{site.data.locales[page.lang].site.footer_line}}</p>
+
+            <div>
+		<a href="https://github.com/marcanuy/jekyll-skeleton/edit/master/{{ page.path }}">
+		    <i class="fa fa-pencil"></i> &nbsp;{{site.data.locales[page.lang].site.improve}}</a>
+	    </div>
+
 	</footer>
 
 

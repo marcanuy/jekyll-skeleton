@@ -10,6 +10,7 @@ en:
     all_pages: All Pages
     no_title_pages: Pages without title
     footer_line: This is the content that will appear in the footer
+    improve: Improve this page
   home:
     jumbotron_heading: Hello, world!
     jumbotron_lead: >-
@@ -32,6 +33,7 @@ es:
     all_pages: Todas las páginas
     no_title_pages: Páginas sin titulo
     footer_line: Este es el contenido que aparecerá en el pie de página
+    improve: Mejora esta página
   home:
     jumbotron_heading: Hola, mundo!
     jumbotron_lead: >-
@@ -55,6 +57,7 @@ de:
     all_pages: Alle Seiten
     no_title_pages: Seiten ohne Titel.
     footer_line: Dies ist der Inhalt, der in der Fußzeile erscheinen wird
+    improve: Verbessere diese Seite
   home:
     jumbotron_heading: Hallo Welt!
     jumbotron_lead: >-

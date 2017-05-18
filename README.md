@@ -116,7 +116,8 @@ on a blank Jekyll instance with the suggestions provided by the plugins below.
 mind:
 
 - Integrates Bower to manage libraries, assets, and utilities.
-- Bootstrap 4 integrated.
+  - Bootstrap 4.
+  - Font Awesome.
 - Gem theme independent.
 - Optimized for multilanguage.
 - Follows `jekyll-seo-tag` usage suggestions.
@@ -217,6 +218,7 @@ _site/
 │   └── main.css
 ├── bower_components
 │   ├── bootstrap
+│   ├── font-awesome
 │   ├── jquery
 │   └── tether
 ├── bower.json
