@@ -34,12 +34,16 @@ This is a basic Jekyll site created with `jekyll new --blank` (without
 themes, or example posts) to serve as a starting point for any
 website.
 
-Its structure is influenced
-by
+Its structure uses the design described
+in
 [How To Add Bootstrap 4 To Jekyll The Right Way](https://simpleit.rocks/how-to-add-bootstrap-4-to-jekyll-the-right-way/) and
 [Multilingual Jekyll Without Plugins](https://simpleit.rocks/multilingual-jekyll-without-plugins/) articles
-applied
-on a blank Jekyll instance with the suggestions provided by the plugins below.
+applied on a blank Jekyll instance with the suggestions provided by
+the plugins below.
+
+Just clone this repo and start building yours.
+
+	git clone git@github.com:marcanuy/jekyll-skeleton.git
 
 # Features
 
