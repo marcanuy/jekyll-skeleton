@@ -114,6 +114,8 @@ Just clone this repo and start building yours.
 			<link rel="alternate" hreflang="de" href="http://example.com/de" />
 			<link rel="alternate" hreflang="en" href="http://example.com/en" />
 
+- Redirects from default language subfolder to site homepage (`/en` -> `/`)
+
 # Design Philosophy
 
 **jekyll-skeleton** has been built with the following principles in
@@ -200,6 +202,8 @@ The following properties in posts front-matter are used:
   files to make sure they're accurate.
 - <https://github.com/jekyll/jekyll-feed> A Jekyll plugin to generate
   an Atom (RSS-like) feed of your Jekyll posts
+- <https://github.com/jekyll/jekyll-redirect-from> Specify multiple
+  redirections URLs for pages and posts.
 
 If you want to host a site derived from this repo in Github, you can
 follow this guide: [Automated Deployment Of Jekyll Websites To Github Pages With A Git Push To Github ](https://simpleit.rocks/automated-deployment-of-jekyll-websites-to-github-pages-with-a-git-push-to-github/).
