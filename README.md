@@ -34,6 +34,14 @@ This is a basic Jekyll site created with `jekyll new --blank` (without
 themes, or example posts) to serve as a starting point for any
 website.
 
+Its purpose is to quickly start new websites cloning this repo and
+customizing to your needs, having already all the features I was
+adding and configuring every time I created a new Jekyll instance.
+
+Live demo looks so "*minimalistic*" because it does not use any theme
+and its only goal is to show the design of the website navigation and
+how to add posts/categories.
+
 Its structure uses the design described
 in
 [How To Add Bootstrap 4 To Jekyll The Right Way](https://simpleit.rocks/how-to-add-bootstrap-4-to-jekyll-the-right-way/) and
