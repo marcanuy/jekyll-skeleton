@@ -76,4 +76,4 @@ defaults:
 
 permalink: /:categories/:title
 
-exclude: [vendor, deploy.sh]
+exclude: [vendor,deploy.sh,bower_components, Makefile, Gemfile, Gemfile.lock]

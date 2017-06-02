@@ -143,14 +143,13 @@ mind:
 ~~~ bash
 git clone https://github.com/marcanuy/jekyll-skeleton
 cd jekyll-seleton
-bower install
-bundle install --path=vendor/bundle
+make install
 ~~~
 
 ## Serve
 
 ~~~ bash
-bundle exec jekyll serve
+make serve
 ~~~
 
 # Usage
@@ -220,23 +219,73 @@ follow this guide: [Automated Deployment Of Jekyll Websites To Github Pages With
 
 <pre>
 <samp>
-<span >$</span> <kbd>bundle exec jekyll build</kbd>
+<span >$</span> <kbd>make build</kbd>
+bundle install --path vendor/bundler
+Using public_suffix 2.0.5
+Using colorator 1.1.0
+Using sass 3.4.24
+Using rb-fsevent 0.9.8
+Using ffi 1.9.18
+Using kramdown 1.13.2
+Using liquid 3.0.6
+Using mercenary 0.3.6
+Using forwardable-extended 2.6.0
+Using rouge 1.11.1
+Using safe_yaml 1.0.4
+Using mini_portile2 2.1.0
+Using concurrent-ruby 1.0.5
+Using i18n 0.8.1
+Using minitest 5.10.2
+Using thread_safe 0.3.6
+Using colored 1.2
+Using parallel 1.11.2
+Using yell 2.0.7
+Using bundler 1.15.0
+Using addressable 2.5.1
+Using jekyll-sass-converter 1.5.0
+Using rb-inotify 0.9.8
+Using ethon 0.10.1
+Using pathutil 0.14.0
+Using nokogiri 1.7.2
+Using tzinfo 1.2.3
+Using listen 3.0.8
+Using typhoeus 0.8.0
+Using jekyll-toc 0.2.1
+Using activesupport 5.1.1
+Using jekyll-watch 1.5.0
+Using html-proofer 3.7.2
+Using jekyll 3.4.3
+Using jekyll-feed 0.9.2
+Using jekyll-seo-tag 2.2.3
+Using jekyll-sitemap 1.1.1
+Using jekyll-redirect-from 0.12.1
+Bundle complete! 7 Gemfile dependencies, 38 gems now installed.
+Bundled gems are installed into ./vendor/bundler.
+bower install
+mkdir -p assets/vendor/
+cp bower_components/font-awesome/css/font-awesome.min.css assets/vendor/
+cp -r bower_components/font-awesome/fonts assets/vendor/
+cp bower_components/jquery/dist/jquery.min.js assets/vendor/
+cp bower_components/tether/dist/js/tether.min.js assets/vendor/
+cp bower_components/bootstrap/dist/js/bootstrap.min.js assets/vendor/
+bundle exec jekyll build
 Configuration file: /tmp/jekyll-skeleton/_config.yml
             Source: /tmp/jekyll-skeleton
        Destination: /tmp/jekyll-skeleton/_site
  Incremental build: disabled. Enable with --incremental
-      Generating... 
-                    done in 3.897 seconds.
+      Generating...
+                    done in 5.57 seconds.
  Auto-regeneration: disabled. Use --watch to enable.
-<span >$</span> <kbd>tree -L 3 _site/</kbd>*
-_site/
+<span >$</span> <kbd>tree -L 3 _site/</kbd>
+_site
 ├── assets
-│   └── main.css
-├── bower_components
-│   ├── bootstrap
-│   ├── font-awesome
-│   ├── jquery
-│   └── tether
+│   ├── main.css
+│   └── vendor
+│       ├── bootstrap.min.js
+│       ├── font-awesome.min.css
+│       ├── fonts
+│       ├── jquery.min.js
+│       └── tether.min.js
 ├── bower.json
 ├── de
 │   ├── beispiel-post.html
@@ -247,6 +296,7 @@ _site/
 ├── deploy_key.enc
 ├── en
 │   ├── example-post.html
+│   ├── index.html
 │   └── subcategory1
 │       ├── index.html
 │       └── post-in-subdirectory.html
@@ -257,13 +307,31 @@ _site/
 │       ├── index.html
 │       └── post-en-subdirectorio.html
 ├── feed.xml
-├── Gemfile
-├── Gemfile.lock
 ├── index.html
 ├── LICENSE
 ├── README.md
 ├── robots.txt
 └── sitemap.xml
+
+9 directories, 25 files
+
+<span >$</span> <kbd>make check</kbd>
+bundle exec jekyll doctor
+Configuration file: /tmp/jekyll-skeleton/_config.yml
+  Your test results are in. Everything looks fine.
+bundle exec htmlproofer --check-html \
+        --http-status-ignore 999 \
+        --internal-domains localhost:4000 \
+        --assume-extension \
+        _site
+Running ["ScriptCheck", "LinkCheck", "HtmlCheck", "ImageCheck"] on ["_site"] on *.html... 
+
+
+Checking 14 external links...
+Ran on 13 files!
+
+
+HTML-Proofer finished successfully.
 
 </samp>
 </pre>
