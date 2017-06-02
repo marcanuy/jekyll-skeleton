@@ -6,3 +6,4 @@ _site/
 bower_components/
 .bundle/
 vendor/
+assets/fonts
