@@ -129,7 +129,7 @@ Just clone this repo and start building yours.
 **jekyll-skeleton** has been built with the following principles in
 mind:
 
-- Integrates Bower to manage libraries, assets, and utilities.
+- Uses [Yarn](https://github.com/yarnpkg/yarn) to manage libraries, assets, and utilities.
   - Bootstrap 4.
   - Font Awesome.
 - Gem theme independent.
@@ -220,73 +220,88 @@ follow this guide: [Automated Deployment Of Jekyll Websites To Github Pages With
 <pre>
 <samp>
 <span >$</span> <kbd>make build</kbd>
+rm -fr _site/
+rm -fr assets/vendor/ #from yarn
+rm -fr assets/fonts #fontawesome dependency
+rm -fr .sass_cache
 bundle install --path vendor/bundler
-Using public_suffix 2.0.5
-Using colorator 1.1.0
-Using sass 3.4.24
-Using rb-fsevent 0.9.8
-Using ffi 1.9.18
-Using kramdown 1.13.2
-Using liquid 3.0.6
-Using mercenary 0.3.6
-Using forwardable-extended 2.6.0
-Using rouge 1.11.1
-Using safe_yaml 1.0.4
-Using mini_portile2 2.1.0
+Warning: the running version of Bundler (1.13.6) is older than the version that created the lockfile (1.15.0). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
 Using concurrent-ruby 1.0.5
 Using i18n 0.8.1
 Using minitest 5.10.2
 Using thread_safe 0.3.6
+Using public_suffix 2.0.5
+Using colorator 1.1.0
 Using colored 1.2
+Using ffi 1.9.18
+Using forwardable-extended 2.6.0
+Using mercenary 0.3.6
+Using mini_portile2 2.1.0
 Using parallel 1.11.2
 Using yell 2.0.7
-Using bundler 1.15.0
+Using sass 3.4.24
+Using rb-fsevent 0.9.8
+Using kramdown 1.13.2
+Using liquid 3.0.6
+Using rouge 1.11.1
+Using safe_yaml 1.0.4
+Using bundler 1.13.6
+Using tzinfo 1.2.3
 Using addressable 2.5.1
-Using jekyll-sass-converter 1.5.0
-Using rb-inotify 0.9.8
 Using ethon 0.10.1
+Using rb-inotify 0.9.8
 Using pathutil 0.14.0
 Using nokogiri 1.7.2
-Using tzinfo 1.2.3
-Using listen 3.0.8
-Using typhoeus 0.8.0
-Using jekyll-toc 0.2.1
+Using jekyll-sass-converter 1.5.0
 Using activesupport 5.1.1
-Using jekyll-watch 1.5.0
+Using typhoeus 0.8.0
+Using listen 3.0.8
+Using jekyll-toc 0.2.1
 Using html-proofer 3.7.2
+Using jekyll-watch 1.5.0
 Using jekyll 3.4.3
 Using jekyll-feed 0.9.2
+Using jekyll-redirect-from 0.12.1
 Using jekyll-seo-tag 2.2.3
 Using jekyll-sitemap 1.1.1
-Using jekyll-redirect-from 0.12.1
 Bundle complete! 7 Gemfile dependencies, 38 gems now installed.
 Bundled gems are installed into ./vendor/bundler.
-bower install
+yarn install
+yarn install v0.24.5
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.38s.
 mkdir -p assets/vendor/
-cp bower_components/font-awesome/css/font-awesome.min.css assets/vendor/
-cp -r bower_components/font-awesome/fonts assets/vendor/
-cp bower_components/jquery/dist/jquery.min.js assets/vendor/
-cp bower_components/tether/dist/js/tether.min.js assets/vendor/
-cp bower_components/bootstrap/dist/js/bootstrap.min.js assets/vendor/
+cp node_modules/font-awesome/css/font-awesome.min.css assets/vendor/
+cp -r node_modules/font-awesome/fonts assets
+cp node_modules/jquery/dist/jquery.min.js assets/vendor/
+cp node_modules/tether/dist/js/tether.min.js assets/vendor/
+cp node_modules/bootstrap/dist/js/bootstrap.min.js assets/vendor/
 bundle exec jekyll build
 Configuration file: /tmp/jekyll-skeleton/_config.yml
             Source: /tmp/jekyll-skeleton
        Destination: /tmp/jekyll-skeleton/_site
  Incremental build: disabled. Enable with --incremental
-      Generating...
-                    done in 5.57 seconds.
+      Generating... 
+                    done in 5.474 seconds.
  Auto-regeneration: disabled. Use --watch to enable.
+
 <span >$</span> <kbd>tree -L 3 _site/</kbd>
-_site
+_site/
 ├── assets
+│   ├── fonts
+│   │   ├── FontAwesome.otf
+│   │   ├── fontawesome-webfont.eot
+│   │   ├── fontawesome-webfont.svg
+│   │   ├── fontawesome-webfont.ttf
+│   │   ├── fontawesome-webfont.woff
+│   │   └── fontawesome-webfont.woff2
 │   ├── main.css
 │   └── vendor
 │       ├── bootstrap.min.js
 │       ├── font-awesome.min.css
-│       ├── fonts
 │       ├── jquery.min.js
 │       └── tether.min.js
-├── bower.json
 ├── de
 │   ├── beispiel-post.html
 │   ├── index.html
@@ -309,21 +324,23 @@ _site
 ├── feed.xml
 ├── index.html
 ├── LICENSE
+├── package.json
 ├── README.md
 ├── robots.txt
-└── sitemap.xml
+├── sitemap.xml
+└── yarn.lock
 
-9 directories, 25 files
+9 directories, 32 files
 
 <span >$</span> <kbd>make check</kbd>
 bundle exec jekyll doctor
 Configuration file: /tmp/jekyll-skeleton/_config.yml
   Your test results are in. Everything looks fine.
 bundle exec htmlproofer --check-html \
-        --http-status-ignore 999 \
-        --internal-domains localhost:4000 \
-        --assume-extension \
-        _site
+	--http-status-ignore 999 \
+	--internal-domains marcanuy.github.io,localhost:4000 \
+	--assume-extension \
+	_site
 Running ["ScriptCheck", "LinkCheck", "HtmlCheck", "ImageCheck"] on ["_site"] on *.html... 
 
 

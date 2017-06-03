@@ -4,6 +4,7 @@ _site/
 .sass-cache/
 .jekyll-metadata
 bower_components/
+node_modules/
 .bundle/
 vendor/
 assets/fonts

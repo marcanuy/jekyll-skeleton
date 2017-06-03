@@ -45,7 +45,7 @@ lang: en_US
 sass:
     load_paths:
         - _sass
-        - bower_components
+        - node_modules
     style: compressed
 
 gems:
@@ -76,4 +76,10 @@ defaults:
 
 permalink: /:categories/:title
 
-exclude: [vendor,deploy.sh,bower_components, Makefile, Gemfile, Gemfile.lock]
+exclude:
+  - vendor
+  - deploy.sh
+  - node_modules
+  - Makefile
+  - Gemfile
+  - Gemfile.lock
