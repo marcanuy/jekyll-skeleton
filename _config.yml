@@ -83,3 +83,5 @@ exclude:
   - Makefile
   - Gemfile
   - Gemfile.lock
+  - yarn.lock
+  - packages.json
