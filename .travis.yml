@@ -6,6 +6,7 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   - COMMIT_AUTHOR_EMAIL: mcanina@gmail.com
   - ENCRYPTION_LABEL: 3b1e7d965353
+sudo: required
 cache:
   yarn: true
 before_install:
