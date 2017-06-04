@@ -1,16 +1,30 @@
 language: ruby
 rvm:
 - 2.3.1
-before_script:
-- npm install -g yarn
-- yarn install
-- chmod +x ./deploy.sh
-script: bash ./deploy.sh
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   - COMMIT_AUTHOR_EMAIL: mcanina@gmail.com
   - ENCRYPTION_LABEL: 3b1e7d965353
-sudo: false
+cache:
+  yarn: true
 before_install:
-- openssl aes-256-cbc -K $encrypted_3b1e7d965353_key -iv $encrypted_3b1e7d965353_iv -in deploy_key.enc -out deploy_key -d
+  - openssl aes-256-cbc -K $encrypted_3b1e7d965353_key -iv $encrypted_3b1e7d965353_iv -in deploy_key.enc -out deploy_key -d
+  - npm install -g yarn
+  - yarn install
+  - chmod +x ./deploy.sh
+  - . $HOME/.nvm/nvm.sh
+  - nvm install stable
+  - nvm use stable
+  - npm install
+  - sudo apt-key adv --fetch-keys http://dl.yarnpkg.com/debian/pubkey.gpg
+  - echo "deb http://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+  - sudo apt-get update -qq
+  - sudo apt-get install -y -qq yarn
+  - node --version
+before_script:
+  - make build-production
+  - make check
+script:
+  - bash ./deploy.sh
+
