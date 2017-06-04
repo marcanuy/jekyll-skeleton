@@ -21,7 +21,7 @@ before_install:
   - sudo apt-get install -y -qq yarn
   - node --version
 before_script:
-  - make build-production
+  - make build
   - make check
 script:
   - bash ./deploy.sh
