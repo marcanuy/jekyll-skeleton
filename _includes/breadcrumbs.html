@@ -9,7 +9,7 @@
 {% assign route="" %}
 
 <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+    <li class="breadcrumb-item"><a href="{{ '/' | absolute_url }}"><i class="fa fa-home" aria-hidden="true"></i></a></li>
     {% for category in categories %}
     
     <li class="breadcrumb-item {%if forloop.last%}active{%endif%}">
@@ -17,7 +17,7 @@
 	{% if forloop.last %}
 	{% if include.title %}{{include.title}}{% else %}{{ category }}{% endif %}
 	{% else %}
-	<a href="{{ route }}">{{ category }}</a> 
+	<a href="{{ route | absolute_url }}">{{ category }}</a> 
 	{% endif %}
     </li>
     {% endfor %}
