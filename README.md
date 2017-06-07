@@ -44,8 +44,10 @@ how to add posts/categories.
 
 Its structure uses the design described
 in
-[How To Add Bootstrap 4 To Jekyll The Right Way](https://simpleit.rocks/how-to-add-bootstrap-4-to-jekyll-the-right-way/) and
-[Multilingual Jekyll Without Plugins](https://simpleit.rocks/multilingual-jekyll-without-plugins/) articles
+[How To Add Bootstrap 4 To Jekyll The Right Way](https://simpleit.rocks/how-to-add-bootstrap-4-to-jekyll-the-right-way/),
+[Multilingual Jekyll Without Plugins](https://simpleit.rocks/multilingual-jekyll-without-plugins/) and
+[How To Implement Breadcrumbs On A Jekyll Site With Nested Categories](https://simpleit.rocks/how-to-create-breadcrumbs-with-hierarchical-categories-in-jekyll/)
+articles
 applied on a blank Jekyll instance with the suggestions provided by
 the plugins below.
 
