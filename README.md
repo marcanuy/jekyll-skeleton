@@ -118,13 +118,25 @@ Just clone this repo and start building yours.
 		    <a hreflang="de" href="http://example.com/de/foobar" />
 			<a hreflang="en" href="http://example.com/en/foobar" />
 			
-	- Alternate link elements in the `head` section of HTML
+	- [Alternate link elements](https://www.w3.org/TR/html5/links.html#rel-alternate) in the `head` section of HTML
 	
 			<link rel="alternate" hreflang="es" href="http://example.com/es" />
 			<link rel="alternate" hreflang="de" href="http://example.com/de" />
 			<link rel="alternate" hreflang="en" href="http://example.com/en" />
 
 - Redirects from default language subfolder to site homepage (`/en` -> `/`)
+- [Breadcrumbs](https://www.w3.org/TR/html5/common-idioms.html#rel-up) for pages and posts
+        
+            <!-- url: /jekyll-skeleton/en/example-post -->
+            <ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="/jekyll-skeleton/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+				<li class="breadcrumb-item ">
+				<a href="/jekyll-skeleton/en">en</a> 
+				</li>
+				<li class="breadcrumb-item active">
+				Example Post
+				</li>
+			</ol>
 
 # Design Philosophy
 
