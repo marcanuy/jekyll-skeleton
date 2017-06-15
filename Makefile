@@ -26,7 +26,7 @@ install: $(PROJECT_DEPS)
 
 update: $(PROJECT_DEPS)
 	$(BUNDLE) update
-	$(YARN) update
+	$(YARN) upgrade
 
 include-yarn-deps:
 	mkdir -p $(VENDOR_DIR)
