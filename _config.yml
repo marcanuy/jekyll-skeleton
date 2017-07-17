@@ -48,7 +48,7 @@ sass:
         - node_modules
     style: compressed
 
-gems:
+plugins:
   - jekyll-toc
   - jekyll-sitemap
   - jekyll-feed
