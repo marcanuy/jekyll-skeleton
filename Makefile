@@ -21,7 +21,8 @@ check:
 		_site
 
 install: $(PROJECT_DEPS)
-	$(BUNDLE) install --path vendor/bundler
+	#$(BUNDLE) install --path vendor/bundler
+	$(BUNDLE) install
 	$(YARN) install
 
 update: $(PROJECT_DEPS)
@@ -33,7 +34,7 @@ include-yarn-deps:
 	cp node_modules/font-awesome/css/font-awesome.min.css $(VENDOR_DIR)
 	cp -r node_modules/font-awesome/fonts $(ASSETS_DIR)
 	cp node_modules/jquery/dist/jquery.min.js $(VENDOR_DIR)
-	cp node_modules/tether/dist/js/tether.min.js $(VENDOR_DIR)
+	cp node_modules/popper.js/dist/umd/popper.min.js $(VENDOR_DIR)
 	cp node_modules/bootstrap/dist/js/bootstrap.min.js $(VENDOR_DIR)
 
 build: clean install include-yarn-deps
