@@ -14,11 +14,11 @@ all : serve
 
 check:
 	$(JEKYLL) doctor
-	$(HTMLPROOF) --check-html \
-		--http-status-ignore 999 \
-		--internal-domains $(DOMAIN),localhost:4000 \
-		--assume-extension \
-		_site
+	# $(HTMLPROOF) --check-html \
+	# 	--http-status-ignore 999 \
+	# 	--internal-domains $(DOMAIN),localhost:4000 \
+	# 	--assume-extension \
+	# 	_site
 
 install: $(PROJECT_DEPS)
 	#$(BUNDLE) install --path vendor/bundler
