@@ -2,7 +2,7 @@ title: ""              # Site title in default language
 
 description: ""        # A short description in default language
 
-url: "https://marcanuy.github.io/jekyll-skeleton/" # The full URL to your site. 
+url: "https://marcanuy.github.io/jekyll-skeleton" # The full URL to your site. 
                        # Note: site.github.url will be used by default.
   
 author: marcanuy       # Global author information, should be the
