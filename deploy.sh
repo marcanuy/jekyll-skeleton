@@ -6,7 +6,7 @@ SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 
 function doCompile {
-    JEKYLL_ENV=production bundle exec jekyll build --destination out --baseurl jekyll-skeleton
+    JEKYLL_ENV=production bundle exec jekyll build --destination out #--baseurl jekyll-skeleton
 }
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
