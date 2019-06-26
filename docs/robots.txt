@@ -1,0 +1,1 @@
+Sitemap: https://marcanuy.github.io/jekyll-skeleton/sitemap.xml
