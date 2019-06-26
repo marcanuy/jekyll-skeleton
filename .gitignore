@@ -1,10 +1,6 @@
-deploy_key
-deploy_key.pub
 _site/
 .sass-cache/
 .jekyll-metadata
 bower_components/
 node_modules/
 .bundle/
-vendor/
-assets/fonts
