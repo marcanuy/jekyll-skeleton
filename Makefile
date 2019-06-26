@@ -47,3 +47,6 @@ clean:
 	rm -fr $(VENDOR_DIR) #from yarn
 	rm -fr $(ASSETS_DIR)/fonts #fontawesome dependency
 	rm -fr .sass_cache
+
+generate-githubpages:
+	rm -fr docs && JEKYLL_ENV=production $(JEKYLL) build -d docs/ && touch docs/.nojekyll
