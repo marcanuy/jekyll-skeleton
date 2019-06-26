@@ -36,11 +36,11 @@ include-yarn-deps:
 	cp node_modules/jquery/dist/jquery.min.js $(VENDOR_DIR)
 	cp node_modules/popper.js/dist/umd/popper.min.js $(VENDOR_DIR)
 	cp node_modules/bootstrap/dist/js/bootstrap.min.js $(VENDOR_DIR)
-
-build: clean install include-yarn-deps
+build-deps: clean install include-yarn-deps
+build: build-deps
 	$(JEKYLL) build
 
-serve: clean install include-yarn-deps
+serve: build-deps
 	JEKYLL_ENV=production $(JEKYLL) serve
 clean:
 	rm -fr _site/
@@ -48,5 +48,5 @@ clean:
 	rm -fr $(ASSETS_DIR)/fonts #fontawesome dependency
 	rm -fr .sass_cache
 
-generate-githubpages:
+generate-githubpages: build-deps
 	rm -fr docs && JEKYLL_ENV=production $(JEKYLL) build -d docs/ && touch docs/.nojekyll
